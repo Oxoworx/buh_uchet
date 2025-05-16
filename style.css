@@ -27,13 +27,16 @@ body {
 }
 
 .main-content h1 {
+
     font-size: 2.8rem;
     font-weight: 700;
-    margin-bottom: 32px;
+    margin-bottom: 62px;
     line-height: 1.2;
 }
 
 .main-btn {
+    margin-top: 80px;
+    text-decoration: none;
     background: #111;
     color: #fff;
     font-size: 1.2rem;
@@ -53,7 +56,7 @@ body {
 .features {
     display: flex;
     gap: 24px;
-    margin-top: 24px;
+    margin-top: 64px;
 }
 
 .feature {
@@ -169,7 +172,7 @@ body {
     }
     .hh-section {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center ;
         padding: 24px 10px;
         gap: 18px;
     }
@@ -242,9 +245,6 @@ body {
     .learn-cards {
         grid-template-columns: 1fr;
         gap: 14px;
-    }
-    .learn-section h2 {
-        font-size: 1.3rem;
     }
     .learn-video iframe {
         height: 180px;
@@ -349,7 +349,7 @@ body {
     gap: 40px;
 }
 .kaspi-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.1;
     color: #111;
@@ -380,28 +380,15 @@ body {
         max-width: 100vw;
     }
     .kaspi-title {
-        font-size: 1.3rem;
         min-width: unset;
     }
     .kaspi-desc {
-        font-size: 1rem;
         max-width: 100%;
-    }
-}
-@media (max-width: 600px) {
-    .whatsapp-section h2 {
-        font-size: 1.2rem;
-    }
-    .gift1c-content h3 {
-        font-size: 1.1rem;
-    }
-    .kaspi-title {
-        font-size: 1.1rem;
     }
 }
 
 .platform-section {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 40px;
@@ -484,21 +471,13 @@ body {
     .platform-img img {
         max-width: 100vw;
     }
-    .platform-content h3 {
-        font-size: 1.3rem;
-    }
     .guarantee-box {
         padding: 18px 10px;
-        font-size: 1rem;
     }
 }
 @media (max-width: 600px) {
-    .platform-content h3 {
-        font-size: 1.1rem;
-    }
     .guarantee-box {
         padding: 10px 4px;
-        font-size: 0.98rem;
     }
 }
 
@@ -584,7 +563,7 @@ body {
 }
 
 .certificate-section {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 48px;
@@ -644,20 +623,6 @@ body {
     }
     .certificate-img img {
         max-width: 90vw;
-    }
-    .certificate-title {
-        font-size: 1.3rem;
-    }
-}
-@media (max-width: 600px) {
-    .accountant-title {
-        font-size: 1.1rem;
-    }
-    .certificate-title {
-        font-size: 1.1rem;
-    }
-    .certificate-desc {
-        font-size: 0.98rem;
     }
 }
 
@@ -761,24 +726,9 @@ body {
         width: 100%;
     }
 }
-@media (max-width: 600px) {
-    .tariffs-section h2 {
-        font-size: 1.3rem;
-    }
-    .tariff-title {
-        font-size: 1.1rem;
-    }
-    .tariff-price {
-        font-size: 1.3rem;
-    }
-    .tariff-btn {
-        font-size: 1rem;
-        padding: 12px 0;
-    }
-}
 
 .free-demo-section {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     gap: 48px;
@@ -900,26 +850,6 @@ body {
     color: #7d3fc7;
     font-size: 0.98rem;
 }
-.reviews-more {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-}
-.reviews-more button {
-    background: #222;
-    color: #fff;
-    font-size: 1.08rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 18px;
-    padding: 12px 32px;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-.reviews-more button:hover {
-    background: #444;
-}
-
 @media (max-width: 900px) {
     .free-demo-section {
         flex-direction: column;
@@ -975,43 +905,19 @@ body {
         width: 100%;
         box-sizing: border-box;
     }
-    .free-demo-content h2 {
-        font-size: 1.4rem;
-    }
-    .free-demo-content p {
-        font-size: 1rem;
-    }
     .free-demo-form input[type="text"],
     .free-demo-form input[type="email"],
     .free-demo-form input[type="tel"] {
-        font-size: 1rem;
         padding: 12px 16px;
-    }
-    .reviews-section h2 {
-        font-size: 1.4rem;
     }
     .review-card {
         padding: 16px;
     }
-    .review-text {
-        font-size: 0.95rem;
-    }
-    .program-section h2 {
-        font-size: 1.4rem;
-    }
     .program-package-title {
-        font-size: 1.1rem;
         padding: 6px 12px;
     }
-    .faq-section h2 {
-        font-size: 1.4rem;
-    }
     .accordeon-header {
-        font-size: 0.95rem;
         padding: 12px 16px 12px 0;
-    }
-    .accordeon-body ul {
-        font-size: 0.95rem;
     }
 }
 
@@ -1154,7 +1060,7 @@ body {
 }
 
 .faq-section {
-    background: #bfbfbf;
+    background: #fdf8fe;
     padding: 64px 0 80px 0;
     border-radius: 0 0 32px 32px;
     margin-top: 0;
@@ -1497,26 +1403,7 @@ body {
 
 @media (max-width: 299px) {
     body {
-        font-size: 0.85rem;
-    }
-    .main-section,
-    .hh-section,
-    .learn-section,
-    .whatsapp-section,
-    .gift1c-section,
-    .kaspi-section,
-    .platform-section,
-    .guarantee-section,
-    .accountant-card-section,
-    .certificate-section,
-    .tariffs-section,
-    .free-demo-section,
-    .reviews-section,
-    .program-section,
-    .faq-section,
-    .footer {
-        margin: 0 2px !important;
-        padding: 8px 2px !important;
+        /* font-size: 0.85rem; */
     }
     .main-content h1,
     .learn-section h2,
@@ -1529,47 +1416,37 @@ body {
     .reviews-section h2,
     .program-section h2,
     .faq-section h2 {
-        font-size: 1rem !important;
+        /* font-size: 1rem !important; */
     }
     .feature,
     .accountant-card,
     .tariff-card,
     .review-card {
-        padding: 8px 4px !important;
-        font-size: 0.85rem !important;
-        border-radius: 8px !important;
+        /* font-size: 0.85rem !important; */
     }
     .free-demo-form input[type="text"],
     .free-demo-form input[type="email"],
     .free-demo-form input[type="tel"],
     .free-demo-form button {
-        font-size: 0.85rem !important;
-        padding: 8px 8px !important;
-        border-radius: 12px !important;
+        /* font-size: 0.85rem !important; */
     }
     .free-demo-form button {
-        font-size: 0.9rem !important;
-        padding: 10px 0 !important;
+        /* font-size: 0.9rem !important; */
     }
     .popup-content {
-        padding: 10px 2px !important;
-        border-radius: 10px !important;
+        /* font-size: 1rem !important; */
     }
     .accordeon-header {
-        font-size: 0.85rem !important;
-        padding: 8px 8px 8px 0 !important;
+        /* font-size: 0.85rem !important; */
     }
     .accordeon-body ul {
-        font-size: 0.8rem !important;
-    }
-    .footer-content {
-        padding: 0 2px !important;
+        /* font-size: 0.8rem !important; */
     }
     .footer-section h4 {
-        font-size: 1rem !important;
+        /* font-size: 1rem !important; */
     }
     .footer-bottom p {
-        font-size: 0.7rem !important;
+        /* font-size: 0.7rem !important; */
     }
 }
 
@@ -1592,9 +1469,9 @@ body {
     text-align: center;
     color: #7d3fc7;
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 0.82rem;
     text-decoration: none;
-    padding: 8px 0 4px 0;
+    padding: 4px 0 2px 0;
     transition: color 0.2s;
     border-radius: 8px;
     display: flex;
@@ -1603,9 +1480,20 @@ body {
     justify-content: center;
     height: 100%;
 }
+.bottom-nav-link svg {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 2px;
+    display: block;
+    fill: #7d3fc7;
+    transition: fill 0.2s;
+}
 .bottom-nav-link:hover, .bottom-nav-link:active {
     color: #a259e6;
     background: #f3eaff;
+}
+.bottom-nav-link:hover svg, .bottom-nav-link:active svg {
+    fill: #a259e6;
 }
 @media (min-width: 901px) {
     .bottom-nav {
@@ -1619,5 +1507,134 @@ body {
     .bottom-nav-link {
         font-size: 0.98rem;
         padding: 4px 0 2px 0;
+    }
+}
+
+.accountant-card-section-mobile {
+    display: none;
+}
+@media (max-width: 900px) {
+    .accountant-card-section {
+        display: none !important;
+    }
+    .accountant-card-section-mobile {
+        display: block;
+        max-width: 600px;
+        margin: 40px auto 0 auto;
+        padding: 0 8px;
+    }
+    .accountant-card-mobile {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        padding: 18px 10px 18px 10px;
+        font-size: 2.55rem;
+        color: #222;
+    }
+    .accountant-header-mobile {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+    .accountant-avatar {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .accountant-info-mobile {
+        font-size: 1rem;
+        color: #222;
+    }
+    .accountant-title-mobile {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #111;
+        margin-bottom: 6px;
+    }
+    .accountant-price-mobile {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #111;
+        margin-bottom: 10px;
+    }
+    .accountant-card-mobile hr {
+        border: none;
+        border-top: 1.5px solid #e0e0e0;
+        margin: 10px 0 16px 0;
+    }
+    .accountant-details-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .accountant-block-mobile {
+        margin-bottom: 0;
+    }
+    .accountant-label-mobile {
+        font-weight: 600;
+        color: #111;
+        font-size: 1.01rem;
+        margin-bottom: 4px;
+    }
+    .accountant-list-mobile {
+        margin: 0;
+        padding-left: 18px;
+        color: #222;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    .accountant-list-mobile li {
+        margin-bottom: 4px;
+    }
+}
+@media (max-width: 600px) {
+    .accountant-card-section-mobile {
+        margin: 24px 0 100px 0;
+        padding: 0 2px;
+    }
+    .accountant-card-mobile {
+        padding: 10px 10px 30px 10px;
+        font-size: 0.98rem;
+    }
+    .accountant-title-mobile {
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+    }
+    .accountant-label-mobile {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.1rem;
+    }
+    .accountant-list-mobile {
+        font-size: 1.05rem;
+    }
+}
+
+.resume-title {
+    background: #f2f2f2;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 88px 0 12px 0;
+    margin: 0 auto 24px auto;
+    max-width: 100vw;
+    letter-spacing: 0.01em;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+}
+.resume-title-red {
+    color: #e53935;
+}
+@media (max-width: 900px) {
+    .resume-title {
+        font-size: 2rem;
+        padding: 32px 0 18px 0;
+    }
+}
+@media (max-width: 600px) {
+    .resume-title {
+        font-size: 1.8rem;
+        padding: 58px 10px 10px 10px;
     }
 }

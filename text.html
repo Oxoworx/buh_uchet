@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat with Me on WhatsApp</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ece5dd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .chat-box {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .chat-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+      font-size: 14px;
+    }
+    .wa-button {
+      background-color: #25D366;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .wa-button:hover {
+      background-color: #1ebe5d;
+    }
+    .wa-icon {
+      width: 18px;
+      height: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="chat-box">
+    <div><strong>Message me on WhatsApp</strong></div>
+    <input id="userMessage" class="chat-input" placeholder="Type your message..." onkeypress="handleKeyPress(event)" />
+    <button class="wa-button" onclick="sendToWhatsApp()">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" class="wa-icon">
+      Send on WhatsApp
+    </button>
+  </div>
+
+  <script>
+    function handleKeyPress(event) {
+      if (event.key === 'Enter') {
+        sendToWhatsApp();
+      }
+    }
+
+    function sendToWhatsApp() {
+      const phoneNumber = '77479003610';
+      const message = document.getElementById('userMessage').value.trim();
+      if (!message) return alert('Please type a message first!');
+      const encodedMessage = encodeURIComponent(message);
+      const waLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      window.open(waLink, '_blank');
+    }
+  </script>
+
+</body>
+</html>
