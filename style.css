@@ -38,7 +38,13 @@ body {
     margin-bottom: 62px;
     line-height: 1.2;
 }
-
+.main-content h2 {
+    color: hsl(0, 0%, 10%);
+    font-size: 2.0rem;
+    font-weight: 600;
+    margin-bottom: 62px;
+    line-height: 1.2;
+}
 .main-btn {
     margin-top: 80px;
     text-decoration: none;
@@ -1407,55 +1413,6 @@ body {
     }
 }
 
-@media (max-width: 299px) {
-    body {
-        /* font-size: 0.85rem; */
-    }
-    .main-content h1,
-    .learn-section h2,
-    .whatsapp-section h2,
-    .kaspi-title,
-    .platform-content h3,
-    .certificate-title,
-    .tariffs-section h2,
-    .free-demo-content h2,
-    .reviews-section h2,
-    .program-section h2,
-    .faq-section h2 {
-        /* font-size: 1rem !important; */
-    }
-    .feature,
-    .accountant-card,
-    .tariff-card,
-    .review-card {
-        /* font-size: 0.85rem !important; */
-    }
-    .free-demo-form input[type="text"],
-    .free-demo-form input[type="email"],
-    .free-demo-form input[type="tel"],
-    .free-demo-form button {
-        /* font-size: 0.85rem !important; */
-    }
-    .free-demo-form button {
-        /* font-size: 0.9rem !important; */
-    }
-    .popup-content {
-        /* font-size: 1rem !important; */
-    }
-    .accordeon-header {
-        /* font-size: 0.85rem !important; */
-    }
-    .accordeon-body ul {
-        /* font-size: 0.8rem !important; */
-    }
-    .footer-section h4 {
-        /* font-size: 1rem !important; */
-    }
-    .footer-bottom p {
-        /* font-size: 0.7rem !important; */
-    }
-}
-
 .bottom-nav {
     position: fixed;
     left: 0;
@@ -1671,4 +1628,7 @@ body {
 
 .container ul li {
     margin-bottom: 5px;
+}
+.etc-h1 {
+    margin-top: 5%;
 }
