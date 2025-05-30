@@ -1,5 +1,8 @@
 *{
     font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
@@ -1640,4 +1643,32 @@ body {
         font-size: 1.8rem;
         padding: 58px 10px 10px 10px;
     }
+}
+
+.container {
+    max-width: 960px; /* Limit content width on large screens */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding on the sides for smaller screens */
+}
+
+.container h1 {
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.container p {
+    margin-bottom: 15px;
+}
+
+.container ul {
+    margin-bottom: 15px;
+    padding-left: 20px; /* Add some padding for list items */
+}
+
+.container ul li {
+    margin-bottom: 5px;
 }
